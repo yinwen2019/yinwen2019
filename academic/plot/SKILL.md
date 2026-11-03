@@ -1,5 +1,5 @@
 ---
-name: yinwen-academic-plot-style
+name: plot
 description: Apply Yinwen's personal academic visualization style to Python figures made with Matplotlib and Seaborn. Use when creating, restyling, or reviewing research plots, including training curves, grouped bars, distributions, hyperparameter sensitivity panels, ablations, and embedding visualizations. Interpret the figure semantics first, preserve the analysis logic, and adapt the visual encoding instead of forcing a fixed chart template.
 ---
 
