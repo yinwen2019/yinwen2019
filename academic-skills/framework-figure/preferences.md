@@ -19,6 +19,12 @@
 - [C²R · Figure 2](references/c2r-fig2/notes.md)
 - [XR-1 · Figure 2](references/xr1-fig2/notes.md)
 
+同日，用户继续指定收录以下三篇。主框架图同样由 AI 根据方法范围选择；各图的局部视觉观察保存在对应记录中，尚未形成新的已确认共性偏好。
+
+- [FlashWorld · Figure 3](references/flashworld-fig3/notes.md)
+- [DECS · Figure 2](references/decs-fig2/notes.md)
+- [UniImb · Figure 1](references/uniimb-fig1/notes.md)
+
 ## 已确认的共性视觉偏好
 
 目前尚无具体的共性视觉规则。字体、色值、圆角、线宽和固定布局未被用户指定为后续默认。
@@ -34,6 +40,8 @@
 - **有层次的整体与局部表达**：[CoTyle](references/cotyle-fig3/notes.md) 区分训练阶段与推理，[FGAesQ](references/fgaesq-fig4/notes.md) 使用上层总览与下层模块展开，[SD-MIA](references/sd-mia-fig1/notes.md) 使用上下机制对照。新增的 [BehaviorVLA](references/behaviorvla-fig2/notes.md) 将总览与双模块展开对应，[XR-1](references/xr1-fig2/notes.md) 用上大下双栏展示三个训练阶段；[C²R](references/c2r-fig2/notes.md) 则采用紧凑横向双目标布局。这些是可选表达方式，尚不能固定成所有图的版式。
 
 ## 修订说明
+
+- 2026-11-05：新增 FlashWorld、DECS、UniImb 三条参考；原始 OpenReview 链接无法直接访问，均采用核对身份后的 ICLR 正式论文集 PDF。保存双阶段训练、训练反馈回路、总览加局部展开的观察，未新增已确认共性规则。
 
 - 2026-11-05：新增 BehaviorVLA、C²R、XR-1 三条参考，更新相关视觉观察；两篇 OpenReview 来源采用已核对身份的 PMLR 官方 PDF。未新增已确认共性规则。
 
