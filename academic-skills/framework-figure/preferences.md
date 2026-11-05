@@ -13,6 +13,12 @@
 - [AToken · Figure 2](references/atoken-fig2/notes.md)
 - [FGAesQ · Figure 4](references/fgaesq-fig4/notes.md)
 
+2026-11-05，用户明确要求新增以下三篇论文到参考库。确认的是收录选择，具体主框架图由 AI 根据论文内容定位；尚无新的局部审美反馈。
+
+- [BehaviorVLA · Figure 2](references/behaviorvla-fig2/notes.md)
+- [C²R · Figure 2](references/c2r-fig2/notes.md)
+- [XR-1 · Figure 2](references/xr1-fig2/notes.md)
+
 ## 已确认的共性视觉偏好
 
 目前尚无具体的共性视觉规则。字体、色值、圆角、线宽和固定布局未被用户指定为后续默认。
@@ -21,13 +27,15 @@
 
 ## 待确认的偏好假设
 
-以下来自本批图片的视觉观察，不能当作用户已确认的要求：
+以下来自已收录图片的视觉观察，不能当作用户已确认的要求：
 
-- **具体样例嵌入方法流程**：四图均将真实图像或文本样例与模块、箭头结合。待确认用户是否喜欢这种具体化表达，及其适用场景。
+- **具体样例嵌入方法流程**：首批四图均将真实图像或文本样例与模块、箭头结合；新增的 [BehaviorVLA](references/behaviorvla-fig2/notes.md)、[C²R](references/c2r-fig2/notes.md) 和 [XR-1](references/xr1-fig2/notes.md) 也使用任务帧或数据缩略图。待确认用户是否喜欢这种具体化表达，及其适用场景。
 - **颜色与语义分组对应**：[CoTyle](references/cotyle-fig3/notes.md)、[AToken](references/atoken-fig2/notes.md)、[FGAesQ](references/fgaesq-fig4/notes.md) 都使用颜色帮助识别模块或信息类别，但色值和字体并不统一。待确认是否偏好这种分组方式。
-- **有层次的整体与局部表达**：[CoTyle](references/cotyle-fig3/notes.md) 区分训练阶段与推理，[FGAesQ](references/fgaesq-fig4/notes.md) 使用上层总览与下层模块展开，[SD-MIA](references/sd-mia-fig1/notes.md) 使用上下机制对照。这些是可选表达方式，尚不能固定成所有图的版式。
+- **有层次的整体与局部表达**：[CoTyle](references/cotyle-fig3/notes.md) 区分训练阶段与推理，[FGAesQ](references/fgaesq-fig4/notes.md) 使用上层总览与下层模块展开，[SD-MIA](references/sd-mia-fig1/notes.md) 使用上下机制对照。新增的 [BehaviorVLA](references/behaviorvla-fig2/notes.md) 将总览与双模块展开对应，[XR-1](references/xr1-fig2/notes.md) 用上大下双栏展示三个训练阶段；[C²R](references/c2r-fig2/notes.md) 则采用紧凑横向双目标布局。这些是可选表达方式，尚不能固定成所有图的版式。
 
 ## 修订说明
+
+- 2026-11-05：新增 BehaviorVLA、C²R、XR-1 三条参考，更新相关视觉观察；两篇 OpenReview 来源采用已核对身份的 PMLR 官方 PDF。未新增已确认共性规则。
 
 - 2026-11-04：收录首批四条正向参考；记录三个待确认观察，未将观察提升为共性视觉规则。维护流程迁移至独立 `figure-library` 技能。
 

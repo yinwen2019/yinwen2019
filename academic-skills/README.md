@@ -76,9 +76,9 @@
 
 默认库保存在 [framework-figure/](framework-figure/)：共性偏好见 [preferences.md](framework-figure/preferences.md)，每张图和分析记录在 [references/](framework-figure/references/) 下。
 
-首批已收录 [CoTyle · Fig. 3](framework-figure/references/cotyle-fig3/notes.md)、[SD-MIA · Fig. 1](framework-figure/references/sd-mia-fig1/notes.md)、[AToken · Fig. 2](framework-figure/references/atoken-fig2/notes.md)、[FGAesQ · Fig. 4](framework-figure/references/fgaesq-fig4/notes.md)。图片宽约 2,600–2,700 像素，并附来源与裁图信息。
+当前共 **7 条参考**。首批已收录 [CoTyle · Fig. 3](framework-figure/references/cotyle-fig3/notes.md)、[SD-MIA · Fig. 1](framework-figure/references/sd-mia-fig1/notes.md)、[AToken · Fig. 2](framework-figure/references/atoken-fig2/notes.md)、[FGAesQ · Fig. 4](framework-figure/references/fgaesq-fig4/notes.md)。2026-11-05 新增 [BehaviorVLA · Fig. 2](framework-figure/references/behaviorvla-fig2/notes.md)、[C²R · Fig. 2](framework-figure/references/c2r-fig2/notes.md)、[XR-1 · Fig. 2](framework-figure/references/xr1-fig2/notes.md)。图片均以 400 DPI 截取，宽约 2,600–2,700 像素，并附科学上下文、视觉分析、来源与裁图信息。
 
-这四篇是作者已选中的正向参考，具体审美细节尚待反馈确认。其他使用者可以直接借用本库；作者偏好仍保留原归属。建立自己的偏好库时，使用独立目录。
+首批四篇是作者明确表示喜欢的正向参考；新增三篇已明确指定收录，具体审美细节尚待反馈确认。其他使用者可以直接借用本库；作者偏好仍保留原归属。建立自己的偏好库时，使用独立目录。
 
 ## 后续规划
 
