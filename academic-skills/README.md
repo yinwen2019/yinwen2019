@@ -7,16 +7,16 @@
 | 文件夹 | 状态 | 用途 | 主要交付 |
 | --- | --- | --- | --- |
 | [plot](plot/SKILL.md) | 可用 | 用 Python 绘制或调整论文中的定量图，如曲线、柱状图、分布图、消融实验和嵌入可视化 | 可运行绘图代码，默认导出矢量 PDF |
-| [figure-library](figure-library/SKILL.md) | 可用，已验证论文链接入库流程 | 从论文链接、PDF 或图片建立和维护个人框架图参考库 | 高清参考图、科学上下文、视觉分析与偏好记录 |
+| [figure-library](figure-library/SKILL.md) | 可用 | 从论文链接、PDF 或图片维护 Intro 图与主框架图参考库 | 高清参考图、科学上下文、视觉分析与偏好记录 |
 | [framework-figure](framework-figure/SKILL.md) | 可用，提示词工作流初版 | 根据当前论文方法，借鉴参考库设计 framework、pipeline 或 architecture 图 | 中文设计说明、完整英文生图提示词、参考图片列表 |
-| [intro-figure](intro-figure/) | 规划中，仅目录占位 | 根据背景、动机和核心思想设计 conceptual 或 teaser 图 | 拟提供设计说明、英文提示词与参考图；尚无可调用的 SKILL.md |
+| [intro-figure](intro-figure/SKILL.md) | 可用，提示词工作流初版 | 根据论文背景、动机和核心思想设计 conceptual 或 teaser 图 | 中文设计说明、完整英文生图提示词、参考图片列表 |
 
 ## 如何选择
 
 - **已有实验数据或绘图代码，需要画论文统计图**：使用 `plot`。
 - **想把喜欢的论文图加入参考库，或更新长期偏好**：使用 `figure-library`。
 - **已有当前论文的背景和方法，需要设计主框架图**：使用 `framework-figure`；直接复用已有库时，无需先运行维护技能。
-- **需要 Intro 动机图**：等待 `intro-figure` 的参考库和工作流完成。
+- **已有论文背景、局限与核心思想，需要 Intro 动机图**：使用 `intro-figure`。
 
 下面的示例路径均以本仓库根目录为起点。在能读取仓库文件的 AI 工具中，让 AI 先阅读对应的 `SKILL.md`，再提供任务材料即可。复制技能到其他位置时，应保留其所需的参考数据和脚本，或明确指定自己的参考库路径。
 
@@ -42,7 +42,7 @@
 
 **得到**：每张参考图对应一个目录，保存图片及 `notes.md`，记录来源、科学上下文、视觉分析和用户偏好。PDF 默认截取为 400 DPI、质量 95 的 JPG，并记录图号、页码与裁剪位置。
 
-向本仓库的默认库添加参考：
+向本仓库的主框架库添加参考：
 
 ```text
 请读取 academic-skills/figure-library/SKILL.md。
@@ -50,6 +50,8 @@
 （粘贴论文链接）
 请截取高清图片，整理科学上下文和视觉分析；我喜欢的具体细节是……
 ```
+
+收录 Intro 图时，指定 `academic-skills/intro-figure/`，可同时给出目标图号。记录引言中的动机与局限、本文回应、图注依据和视觉观察。
 
 创建自己的库时，将上面的目标换成独立目录，例如 `my-figure-library/`，并明确要求初始化；之后让设计技能使用同一个 `library_root`。更新偏好时，可以明确说：“将这个反馈保存为该参考库的长期偏好”。
 
@@ -72,16 +74,26 @@
 
 当前交付到提示词为止。实际生图时，把英文提示词和列出的参考图片一并提供给支持参考图输入的生图模型；仅粘贴图片路径不会传入图片。生图后还需核对文字和连线。直接生图与可编辑终稿留作后续扩展。
 
+### intro-figure：引言动机图与提示词
+
+**提供**论文摘要或引言、关键局限、核心洞察，以及希望展示的任务例子或有依据的结果。
+
+**得到**中文设计说明、完整英文生图提示词和参考图片列表。技能每次阅读最新偏好与全库简短记录，选择与叙事匹配的图例。
+
+```text
+请读取 academic-skills/intro-figure/SKILL.md。
+根据下面的摘要、引言和核心方法设计一张 Intro 图。
+请给出中文设计说明、英文生图提示词和参考图片列表。
+```
+
 ## 当前参考库
 
-默认库保存在 [framework-figure/](framework-figure/)：共性偏好见 [preferences.md](framework-figure/preferences.md)，每张图和分析记录在 [references/](framework-figure/references/) 下。
+Intro 库保存在 [intro-figure/](intro-figure/)，首条为 [C²R · Fig. 1](intro-figure/references/c2r-fig1/notes.md)。对应的论文动机、图注依据和观察与图片一起保存，长期反馈汇总到 [Intro 偏好记录](intro-figure/preferences.md)。
+
+主框架库保存在 [framework-figure/](framework-figure/)：共性偏好见 [preferences.md](framework-figure/preferences.md)，每张图和分析记录在 [references/](framework-figure/references/) 下。
 
 当前共 **10 条参考**。首批已收录 [CoTyle · Fig. 3](framework-figure/references/cotyle-fig3/notes.md)、[SD-MIA · Fig. 1](framework-figure/references/sd-mia-fig1/notes.md)、[AToken · Fig. 2](framework-figure/references/atoken-fig2/notes.md)、[FGAesQ · Fig. 4](framework-figure/references/fgaesq-fig4/notes.md)。2026-11-05 先后新增 [BehaviorVLA · Fig. 2](framework-figure/references/behaviorvla-fig2/notes.md)、[C²R · Fig. 2](framework-figure/references/c2r-fig2/notes.md)、[XR-1 · Fig. 2](framework-figure/references/xr1-fig2/notes.md)，以及 [FlashWorld · Fig. 3](framework-figure/references/flashworld-fig3/notes.md)、[DECS · Fig. 2](framework-figure/references/decs-fig2/notes.md)、[UniImb · Fig. 1](framework-figure/references/uniimb-fig1/notes.md)。图片均以 400 DPI 截取，宽约 2,200–2,700 像素，并附科学上下文、视觉分析、来源与裁图信息。
 
 首批四篇是作者明确表示喜欢的正向参考；后续六篇已明确指定收录，具体审美细节尚待反馈确认。其他使用者可以直接借用本库；作者偏好仍保留原归属。建立自己的偏好库时，使用独立目录。
 
-## 后续规划
-
-`intro-figure` 将围绕“问题与动机 → 核心思想 → 任务或能力展示”建立工作流，先积累 conceptual / teaser 正向图例，再整理偏好与提示词要求。当前仅保留目录，尚未实现。
-
-现有参考库继续采用全库阅读；待规模确实影响效率后，再决定是否分类或引入检索工具。
+两个库采用全库阅读。可在同一对话继续提供论文或针对图的反馈，后续设计会读取更新后的文件。库规模明显影响检索效率时，再决定是否增加宏观分类。
